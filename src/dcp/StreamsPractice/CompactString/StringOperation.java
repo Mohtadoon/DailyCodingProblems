@@ -13,6 +13,9 @@ public class StringOperation {
 
     public static void main(String[] args) {
 
+        ArrayList<Integer> c =new ArrayList<>();
+        c.add(1);
+        System.out.println(c.get(0));
         //Create an IntStream  IntStream intStream = x.chars();
 
 
@@ -40,6 +43,7 @@ public class StringOperation {
             charArray[i] = (char) chars[i];
 
         });
+
 
 
         //System.out.println(Arrays.toString(charArray));
@@ -124,6 +128,12 @@ public class StringOperation {
         System.out.println(v.substring(0,3));
         //v.substring()
 
+        Map<String, String> map1 = new HashMap<>();
+        System.out.println(map1.get("kjsald"));
+
+        String mk = "fasdfa";
+        mk.substring(0,0);
+        String.valueOf(mk.charAt(0));
 
     }
 
@@ -133,6 +143,9 @@ public class StringOperation {
     static int returnInt(){
         return 1;
     }
+
+
+
 
 
 

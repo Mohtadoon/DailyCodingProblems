@@ -1,4 +1,4 @@
-package dcp;
+package dcp.old.DCP;
 
 import static java.lang.Math.*;
 

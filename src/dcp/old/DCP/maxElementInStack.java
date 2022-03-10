@@ -1,4 +1,4 @@
-package dcp;
+package dcp.old.DCP;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
