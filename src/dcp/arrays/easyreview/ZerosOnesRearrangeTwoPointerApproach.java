@@ -1,4 +1,4 @@
-package dcp.march.easy;
+package dcp.arrays.easyreview;
 
 import java.util.Arrays;
 
