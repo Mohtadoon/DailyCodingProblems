@@ -1,9 +1,9 @@
-package dcp.algorithms;
+package dcp.arrays.easyreview;
 
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class RearrangeArray {
     public static void main(String[] args) throws IOException {
         int arr[] = new int[]{5, 3, -3, -4, 0, 2, -1, 4, -7, 2};
         System.out.println(Arrays.toString(newRearrange(arr,10)));

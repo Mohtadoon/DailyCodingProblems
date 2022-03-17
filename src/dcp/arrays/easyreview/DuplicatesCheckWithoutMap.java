@@ -1,4 +1,4 @@
-package dcp.algorithms;
+package dcp.arrays.easyreview;
 
 import java.util.ArrayList;
 import java.util.List;
