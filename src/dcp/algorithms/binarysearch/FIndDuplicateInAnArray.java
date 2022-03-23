@@ -1,9 +1,9 @@
-package dcp.algorithms;
+package dcp.algorithms.binarysearch;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class BinarySearch {
+//finding duplicates using binary search
+public class FIndDuplicateInAnArray {
     public static void main(String[] args) {
         int key = 9;
         ArrayList<Integer> list = new ArrayList<>();
