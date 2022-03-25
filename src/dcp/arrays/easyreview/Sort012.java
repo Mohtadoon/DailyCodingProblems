@@ -6,7 +6,7 @@ public class Sort012 {
 
     public static void main(String[] args) {
         int[] a = new int[]{0, 2, 1, 2, 0};
-        sort0122(a,a.length);
+        sort0122_revise(a,a.length);
         System.out.println(Arrays.toString(a));
     }
 
@@ -71,9 +71,29 @@ public class Sort012 {
 
     }
 
+    //review_1
     static void swap(int[] a, int i, int j){
         int temp = a[i];
         a[i] = a[j];
         a[j] = temp;
+    }
+
+    public static void sort0122_revise(int a[], int n){
+      int i = 0;
+      int j = 0;
+      int k = n-1;
+
+      while( j <= k){
+          if(a[j] == 0){
+              swap(a, i, j);
+              i++;
+              j++;
+          }else if(a[j] == 1){
+              j++;
+          }else {
+              swap(a, j, k);
+              k--;
+          }
+      }
     }
 }
