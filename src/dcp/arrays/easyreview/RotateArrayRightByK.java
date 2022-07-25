@@ -78,4 +78,21 @@ public class RotateArrayRightByK {
     }
 
 
+    //revisted1
+    static int[] rotateRe(int[] a, int k){
+
+        k = k % a.length;
+
+        for(int i = 0; i< k; i++){
+            for(int j = a.length; j < i; j--){
+
+
+            }
+
+        }
+
+        return a;
+    }
+
+
 }
