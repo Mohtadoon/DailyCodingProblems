@@ -43,7 +43,7 @@ public class RansomString {
 
         for(char c : mapR.keySet()){
 
-            if(mapR.get(c) != 0){
+            if(mapR.get(c) <= 0){
                 return false;
             }
 
