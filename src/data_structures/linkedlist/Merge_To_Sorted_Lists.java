@@ -22,7 +22,8 @@ public class Merge_To_Sorted_Lists {
         l2.next.next = new ListNode(4, null);
 
 
-        ListNode mergedList = mergeLists(l1, l2);
+        //ListNode mergedList1 = mergeLists(l1, l2);
+        ListNode mergedList = recursiveMerge(l1, l2);
         ListNode temp = mergedList;
 
         while (temp != null){
@@ -41,9 +42,6 @@ public class Merge_To_Sorted_Lists {
         if(list2 == null){
             return list1;
         }
-
-
-
 
         ListNode head;
 
@@ -82,6 +80,24 @@ public class Merge_To_Sorted_Lists {
 
 
         return head;
+
+    }
+
+
+    public static ListNode recursiveMerge(ListNode list1, ListNode list2){
+
+        if (list1 == null)
+            return list2;
+        if (list2 == null)
+            return list1;
+
+        if (list1.val < list2.val) {
+            list1.next = recursiveMerge(list1.next, list2);
+            return list1;
+        } else {
+            list2.next = recursiveMerge(list1, list2.next);
+            return list2;
+        }
 
     }
 
